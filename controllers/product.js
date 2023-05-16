@@ -177,7 +177,7 @@ exports.getProducts = async(req, res) => {
   
       if (!allowedType.includes(ext.toLowerCase()))
       return res.status(422).json({ msg: "Invalid_Images" });
-      if (fileSize > 5000000)
+      if (fileSize > 100000)
       return res.status(422).json({ msg: "Max_image" });
   
       const filepath = `./public/images/${product.image}`;
