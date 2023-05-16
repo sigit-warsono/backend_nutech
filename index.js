@@ -1,6 +1,7 @@
 const express = require('express');
 const server = express();
 const port = process.env.PORT || 3000;
+// const port = 8080;
 var mysql = require('mysql');
 require('dotenv').config();
 const bodyParser = require('body-parser')
@@ -22,4 +23,9 @@ db.databaseConf.sync();
 server.listen(port,"0.0.0.0", function(){
  console.log("running in localhost:8080")
 })
+
+// server.listen(port, function(){
+//     console.log("running in localhost:8080")
+//    })
+   
 

@@ -176,9 +176,9 @@ exports.getProducts = async(req, res) => {
       const allowedType = [".png", ".jpg"];
   
       if (!allowedType.includes(ext.toLowerCase()))
-        return res.status(404).json({ msg: "Invalid Images" });
+      return res.status(422).json({ msg: "Invalid_Images" });
       if (fileSize > 5000000)
-        return res.status(404).json({ msg: "Image must be less than 5 MB" });
+      return res.status(422).json({ msg: "Max_image" });
   
       const filepath = `./public/images/${product.image}`;
       fs.unlinkSync(filepath);
@@ -212,7 +212,7 @@ exports.getProducts = async(req, res) => {
       res.status(200).json({ msg: "Product Updated Successfuly" });
     } catch (error) {
       console.log(error.message);
-      
+      return res.status(404).json({ message: "Image_Unique" });
     }
   };
   

@@ -4,7 +4,10 @@ const {DataTypes} = Sequelize;
 module.exports=(database, Sequelize)=>{
 
     return database.define("product", {
-        name: DataTypes.STRING,
+        name: {
+          type: DataTypes.STRING,
+          unique: true
+        },
         harga_jual: DataTypes.STRING,
         harga_beli: DataTypes.STRING,
         stok: DataTypes.STRING,
