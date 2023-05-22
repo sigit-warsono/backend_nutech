@@ -1,7 +1,7 @@
 module.exports ={
     USER : "sql12619965",
     DB: "sql12619965",
-    PASSWORD : "llrD2oL2E7l08mGXe0I5",
+    PASSWORD : "8wAHyXQRtA",
     HOST: "sql12.freesqldatabase.com",
     dialect: "mysql",
     pool:{
