@@ -6,9 +6,9 @@ module.exports ={
     HOST: "containers-us-west-99.railway.app",
     dialect: "mysql",
     pool:{
-        max: 5,
-        min: 0,
-        acquire: 3000,
-        idle : 2000
+      max: 15,
+      min: 5,
+      idle: 20000,
+      acquire: 30000
     }
 }
