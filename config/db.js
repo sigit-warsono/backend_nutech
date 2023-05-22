@@ -2,8 +2,8 @@ module.exports ={
     USER : "root",
     DB: "railway",
     PORT: 6797,
-    PASSWORD : "pXLblli51WgHmIFlPmYW",
-    HOST: "containers-us-west-99.railway.app",
+    PASSWORD : "llrD2oL2E7l08mGXe0I5",
+    HOST: "containers-us-west-199.railway.app",
     dialect: "mysql",
     pool:{
       max: 15,
